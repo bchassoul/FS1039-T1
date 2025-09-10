@@ -1,26 +1,16 @@
 #!/usr/bin/env python3
 """
-🌬 Problema 1: Simulación de Onda Sonora
-
-Este script analiza la propagación de ondas sonoras en un medio unidimensional
-usando datos de simulación PLUTO. El problema simula el comportamiento de una
-onda sonora en una "habitación" unidimensional con paredes reflectivas.
-
-📋 Contexto del Problema:
-- Ecuaciones hidrodinámicas: ∂ρ/∂t + ∇⋅(ρv) = 0, ∂v/∂t + (v⋅∇)v = -1/ρ ∇P
-- Condiciones iniciales: perturbación tipo delta en el centro (como aplaudir)
-- Condiciones de frontera: reflectivas (paredes de la habitación)
-- Ecuación de estado: P = c_s²ρ con c_s = 1
+👏 Problema 1: Simulación de Onda Sonora
 
 🎯 Tareas Implementadas:
-1. ✅ Visualización de densidad ρ(x,t) con rango fijo para comparación
-2. ✅ Creación de video mostrando la evolución temporal
-3. ✅ Análisis de componentes de velocidad (vx, vy, vz)
-4. ✅ Cálculo y visualización de presión P = c_s²ρ
-5. ✅ Respuestas conceptuales sobre reflexión en paredes
+1. Visualización de densidad ρ(x,t) con rango fijo para comparación
+2. Creación de video mostrando la evolución temporal
+3. Análisis de componentes de velocidad (vx, vy, vz)
+4. Cálculo y visualización de presión P = c_s²ρ
+5. Respuestas conceptuales sobre reflexión en paredes
 
 📁 Datos requeridos: data/soundwave-data/
-📊 Resultados: results/problema1/
+🔥 Resultados: results/problema1/
 
 Ejecutar desde src/: python solucion_problema1.py
 """
@@ -154,5 +144,3 @@ print("🔥 Archivos generados en results/problema1/:")
 print(" - Videos: density.mp4 y density.gif")
 print(" - Análisis: velocities_t{tA:02d}.png, velocities_t{tB:02d}.png, pressure_t{tP:02d}.png")
 print(" - Fotogramas: frames_density/*.png")
-print("📣 Para generar el resumen conceptual, ejecuta:")
-print("===>   python generar_resumen_problema1.py")

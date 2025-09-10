@@ -41,9 +41,7 @@ def main():
     
     scripts = [
         'solucion_problema1.py',
-        'solucion_problema2.py',
-        'generar_resumen_problema1.py',
-        'generar_resumen_problema2.py'
+        'solucion_problema2.py'
     ]
     
     success_count = 0

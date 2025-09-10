@@ -36,10 +36,6 @@ ENV/
 
 # Results and outputs
 results/
-*.mp4
-*.gif
-*.png
-*.pdf
 
 # Data (if large)
 # data/

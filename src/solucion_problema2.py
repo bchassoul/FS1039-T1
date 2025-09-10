@@ -2,26 +2,15 @@
 """
 ⚡️ Problema 2: Simulación de Onda de Alfvén
 
-Este script analiza la propagación de ondas de Alfvén en magnetohidrodinámica (MHD)
-usando datos de simulación PLUTO. Las ondas de Alfvén son fundamentales en física
-espacial y astrofísica, propagándose a lo largo de las líneas de campo magnético.
-
-📋 Contexto del Problema:
-- Ecuaciones MHD: propagación de ondas en campo magnético
-- Campo inicial: B₀ = B₀ê_z (alineado con eje z)
-- Perturbación: B₁ = 0.1 sin(8π/L · z)ê_x (perpendicular al campo)
-- Condiciones de frontera: periódicas (simulación infinita)
-- Densidad: constante durante la propagación
-
 🎯 Tareas Implementadas:
-1. ✅ Visualización de Bx(z), Bz(z), vx(z) con rangos fijos según ejercicio
-2. ✅ Verificación de perturbación perpendicular: By ≈ 0, vy ≈ 0
-3. ✅ Cálculo de condiciones iniciales: ρ₀, B₀, velocidad de Alfvén v_A
-4. ✅ Análisis de amplitud de perturbación y clasificación del régimen
-5. ✅ Determinación si es régimen sub-Alfvénico o súper-Alfvénico
+1. Visualización de Bx(z), Bz(z), vx(z) con rangos fijos según ejercicio
+2. Verificación de perturbación perpendicular: By ≈ 0, vy ≈ 0
+3. Cálculo de condiciones iniciales: ρ₀, B₀, velocidad de Alfvén v_A
+4. Análisis de amplitud de perturbación y clasificación del régimen
+5. Determinación si es régimen sub-Alfvénico o súper-Alfvénico
 
 📁 Datos requeridos: data/alfvenwave-data/
-📊 Resultados: results/problema2/
+🔥 Resultados: results/problema2/
 
 Ejecutar desde src/: python solucion_problema2.py
 """
@@ -51,7 +40,7 @@ def fixed_ylim_from_series(series_list, pad_frac=0.05, symmetric=False):
 def write_summary(path, lines):
     with open(path, 'w') as f:
         for L in lines:
-            f.write(str(L).rstrip() + '\\n')
+            f.write(str(L).rstrip() + '\n')
 
 # ---------- Limpieza de resultados anteriores ----------
 # Limpiar resultados anteriores
@@ -236,5 +225,3 @@ print("🔥 Archivos generados en results/problema2/:")
 print(" - Videos: Bx.mp4, Bz.mp4, vx.mp4 y sus respectivos GIFs")
 print(" - Análisis: by_vy_tXX.png, rho_t00.png, bz_t00.png, vx_amp_over_time.png")
 print(" - Resumen: resumen.txt")
-print("📣 Para generar el resumen conceptual, ejecuta:")
-print("===>   python generar_resumen_problema2.py")
